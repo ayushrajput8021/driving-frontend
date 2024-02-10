@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import TestRules from '../components/TestRules';

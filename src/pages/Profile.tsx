@@ -129,7 +129,7 @@ export default function Profile() {
 				className='text-center text-blue-400 cursor-pointer border-b-2 w-fit mb-6'
 			>
 				{' '}
-				Dashboard
+				Go to Dashboard
 			</a>
 			<Heading title='Profile' className='text-xl mb-2' />
 			{loading ? (

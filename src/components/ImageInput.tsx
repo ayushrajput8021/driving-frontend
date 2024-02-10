@@ -66,7 +66,7 @@ export default function ImageInput({
 						<TextField type='file' size='small' onChange={handleFileChange} />
 						<a
 							onClick={handleUploadClick}
-							className='cursor-pointer text-blue-200'
+							className='cursor-pointer text-blue-200 border p-2 rounded-lg mt-2 w-fit text-center'
 						>
 							{fileLoading ? 'Uploading ...' : 'Upload Image'}
 						</a>

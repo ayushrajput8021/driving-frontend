@@ -57,6 +57,9 @@ export default function SignUp() {
 		navigate('/signin');
 	}
 	function handleInputCheck() {
+		if(password.length < 6) {
+			setError({...error, password: true})
+		}
 		if (confirmPassword !== password) {
 			setError({ ...error, confirmPassword: true });
 		}

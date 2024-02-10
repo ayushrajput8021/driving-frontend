@@ -73,7 +73,7 @@ export default function AadharInput({
 	return (
 		<div className='flex flex-col items-start border rounded-md p-4 pt-1 pl-2 border-white mt-8'>
 			<Heading title='Aadhar Information' className='mb-2' />
-			<div className='flex justify-between w-full'>
+			<div className='flex justify-between w-full items-center'>
 				<TextField
 					sx={{ width: '50%', marginBottom: '5%', marginRight: '5%' }}
 					label='Aadhar Number'
@@ -88,16 +88,15 @@ export default function AadharInput({
 				/>
 				{lock ? (
 					<p className='text-sm text-gray-500'>
-						Aadhar Photo Already Uploaded Locked
+						Aadhar Photo Already Uploaded
 					</p>
 				) : (
 					<TextField
-						sx={{ width: '50%', marginBottom: '5%' }}
+						sx={{ width: '50%', marginBottom: '5%',padding:'1ch' }}
 						id='outlined-last-name'
 						type='file'
 						size='small'
 						variant='outlined'
-						className='cursor-none p-1'
 						onChange={handleFileChange}
 						disabled={lock}
 					/>

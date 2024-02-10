@@ -129,7 +129,7 @@ export default function Dashboard() {
 								onClick={handleTest}
 							>
 								{data?.isPassed ? 'Already Passed' : 'Give Test'}
-								{data?.isVerified ? '' : '  {Complete Profile Details}'}
+								{data?.isVerified ? '' : '  (Complete Profile Details first)'}
 							</Button>
 							{data?.isPassed && (
 								<a
@@ -158,7 +158,7 @@ export default function Dashboard() {
 								</a>
 							</div>
 						</div>
-						<Button onClick={handleLogOut} variant='outlined'>
+						<Button sx={{padding:'0.4%',height:'40%'}} onClick={handleLogOut} variant='outlined'>
 							Log Out
 						</Button>
 					</div>
